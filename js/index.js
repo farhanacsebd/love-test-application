@@ -1,13 +1,37 @@
 const bodyE1 = document.querySelector("body");
 const btn = document.getElementById("btn");
 const print = document.getElementById("print");
+const msg = document.getElementById("msg");
 
 
 btn.addEventListener('click',()=>{
-    const inputField = document.getElementById('first').value;
-    const inputField1 = document.getElementById('second').value;
+    const inputField1 = document.getElementById('first').value;
+    const inputField2 = document.getElementById('second').value;
 
-    if()
+    if(inputField1.length == 0 || inputField1.length == 2){
+        msg.innerHTML  = "enter any value";
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },7000)
+       }
+    else if(Number(inputField1)){
+        msg.innerHTML  = "you can't enter any number";
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },7000)
+       }
+    if(inputField2.length == 0 || inputField2.length == 2){
+        msg.innerHTML  = "enter any value";
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },7000)
+       }
+    else if(Number(inputField2)){
+        msg.innerHTML  = "you can't enter any number";
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },7000)
+       }
 })
 
 bodyE1.addEventListener("mousemove",(e) => {
