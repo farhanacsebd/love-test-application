@@ -1,6 +1,6 @@
 const bodyE1 = document.querySelector("body");
 const btn = document.getElementById("btn");
-const print = document.getElementById("print");
+const printLove = document.getElementById("print");
 const msg = document.getElementById("msg");
 
 
@@ -8,30 +8,26 @@ btn.addEventListener('click',()=>{
     const inputField1 = document.getElementById('first').value;
     const inputField2 = document.getElementById('second').value;
 
-    if(inputField1.length == 0 || inputField1.length == 2){
-        msg.innerHTML  = "enter any value";
+    
+    
+    if(Number(inputField1) || inputField1.length == 0 || inputField1.length == 2){
+        msg.innerHTML  = "enter at least 3 character value";
         setTimeout(function(){
             msg.innerHTML = ""
         },7000)
        }
-    else if(Number(inputField1)){
-        msg.innerHTML  = "you can't enter any number";
+    
+    if(Number(inputField2) || inputField2.length == 0 || inputField2.length == 2){
+        msg.innerHTML  = "enter at least 3 character value";
         setTimeout(function(){
             msg.innerHTML = ""
         },7000)
        }
-    if(inputField2.length == 0 || inputField2.length == 2){
-        msg.innerHTML  = "enter any value";
-        setTimeout(function(){
-            msg.innerHTML = ""
-        },7000)
-       }
-    else if(Number(inputField2)){
-        msg.innerHTML  = "you can't enter any number";
-        setTimeout(function(){
-            msg.innerHTML = ""
-        },7000)
-       }
+    else{
+        let random = Math.floor(Math.random() * 100);
+        printLove.innerHTML = `${inputField2} ${random}% Love ${inputField1}`;
+    }   
+
 })
 
 bodyE1.addEventListener("mousemove",(e) => {
