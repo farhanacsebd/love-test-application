@@ -55,11 +55,12 @@ p {
   border: 2px solid #e93b81;
 }
 
-button {
+button#btn {
   background-color: #ef0c67;
   color: #fff;
   margin-top: 15px;
-  padding: 15px 150px;
+  margin-left: 50px;
+  padding: 15px 120px;
   border-radius: 40px;
   border: none;
   font-size: 18px;
@@ -67,8 +68,16 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button#btn:hover {
   background-color: #e22a74;
+}
+
+.btn-reset {
+  background-color: transparent;
+  border: none;
+  color: rgb(5, 48, 5);
+  font-size: 30px;
+  font-weight: 700;
 }
 
 #msg {

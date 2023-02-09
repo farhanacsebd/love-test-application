@@ -1,13 +1,14 @@
 const bodyE1 = document.querySelector("body");
+const input1 = document.getElementById("first");
+const input2 = document.getElementById("second");
 const btn = document.getElementById("btn");
 const printLove = document.getElementById("print");
 const msg = document.getElementById("msg");
 const statement = document.getElementById("statement");
 
 btn.addEventListener("click", () => {
-  const input1 = document.getElementById("first");
+
   const inputField1 = input1.value;
-  const input2 = document.getElementById("second");
   const inputField2 = input2.value;
 
   if (Number(inputField1) || inputField1.length == 0 || inputField1.length == 2) {
@@ -44,8 +45,11 @@ btn.addEventListener("click", () => {
 });
 
 
-const clearAll = () =>{
-    
+const reset = () =>{
+    input1.value = "";
+    input2.value = "";
+    printLove.innerHTML = "";
+    statement.innerHTML = "";
 }
 
 

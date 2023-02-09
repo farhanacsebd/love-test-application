@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
     <link rel="shortcut icon" href="https://i.scdn.co/image/ab67616d0000b273f2c8da6cadd52a79cec69ff3" type="image/x-icon" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style sheet -->
     <link rel="stylesheet" href="style.css" />
     <title>testing App</title>
   </head>
@@ -15,9 +25,10 @@
         <input type="text" placeholder="Your Name" id="first" autofocus />
         <input type="text" placeholder="Your Dear's Name" id="second" /><br />
         <small id="msg"></small><br />
-        <button id="btn">Calcutate</button>
+        <button id="btn">Calcutate</button> &nbsp &nbsp
+        <button title="resetAll" class="btn-reset" onclick="reset()"><i class="fas fa-sync-alt"></i></button>
         <div>
-          <h2 id="print">relationship result</h2>
+          <h2 id="print"></h2>
           <p id="statement"></p>
         </div>
       </div>
