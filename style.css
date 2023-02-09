@@ -3,9 +3,25 @@ body{
     padding: 0;
     height: 100vh;
     width: 100%;
+    background-color: rgb(255, 230, 240);
+    overflow: hidden;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
+
+span{
+    background: url(./pic.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 6s linear;
+}
+
 
 .content{
     width: 500px;
@@ -17,6 +33,7 @@ body{
     padding: 10px;
     box-shadow: 2px 2px 20px #91919191;
     position: absolute;
+    z-index: 1000;
 }
 
 .content input{
@@ -26,6 +43,7 @@ body{
     border-radius: 5px;
     font-size: 17px;
     outline: none;
+    cursor: pointer;
     border: 2px solid #e93b81;
 }
 
@@ -38,5 +56,18 @@ button{
     border: none;
     font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
 }
 
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
