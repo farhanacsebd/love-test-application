@@ -1,4 +1,14 @@
 const bodyE1 = document.querySelector("body");
+const btn = document.getElementById("btn");
+const print = document.getElementById("print");
+
+
+btn.addEventListener('click',()=>{
+    const inputField = document.getElementById('first').value;
+    const inputField1 = document.getElementById('second').value;
+
+    if()
+})
 
 bodyE1.addEventListener("mousemove",(e) => {
     const xPos = e.offsetX; 
