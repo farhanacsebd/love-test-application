@@ -10,7 +10,7 @@ body {
 }
 
 span {
-  background: url(./pic.png);
+  background: url(./images/pic.png);
   width: 100px;
   height: 100px;
   background-size: cover;
