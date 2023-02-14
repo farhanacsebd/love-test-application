@@ -78,6 +78,7 @@ button#btn:hover {
   color: rgb(5, 48, 5);
   font-size: 30px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 #msg {
@@ -99,4 +100,35 @@ button#btn:hover {
     opacity: 0;
     filter: hue-rotate(720deg);
   }
+}
+
+
+@media (max-width: 576px){
+  body{
+    overflow: hidden;
+    text-align: center;
+  }
+.content {
+  width: 300px;
+  margin: auto;
+}
+
+button#btn {
+  margin: 10px;
+  margin-left: 25px;
+  padding: 8px 80px;
+}
+
+h1{
+  font-size: 23px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+p {
+  text-transform: capitalize;
+  font-size: 14px;
+}
 }
